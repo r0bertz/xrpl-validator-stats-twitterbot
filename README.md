@@ -1,9 +1,8 @@
 # xrpl-validator-stats-twitterbot
 
-A Twitter bot that captures a screenshot of [XRPL](https://xrpl.org) [validator
-stats](https://stats.xrplapps.com) using `wkhtmltoimage` and post the picture to
-twitter.
-
+A Twitter bot that captures the screenshot of an [XRPL
+validator](https://xrpl.org/run-rippled-as-a-validator.html)'s stats on
+https://stats.xrplapps.com using `wkhtmltoimage` and tweet it.
 
 1. Clone/download this repo and install dependencies with `npm install`.
 2. Rename `config-example.js` to `config.js` and fill out the necessary
