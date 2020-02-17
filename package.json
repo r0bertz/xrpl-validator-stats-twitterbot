@@ -1,0 +1,14 @@
+{
+  "name": "xrpl-validator-stats-twitterbot",
+  "version": "1.0.0",
+  "description": "Tweet xrpl validator stats.",
+  "main": "tweet.js",
+  "dependencies": {
+    "twit": "^2.2.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "robert.zhangle@gmail.com",
+  "license": "GPLv3"
+}
