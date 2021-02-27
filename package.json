@@ -4,8 +4,8 @@
   "description": "Tweet xrpl validator stats.",
   "main": "tweet.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/r0bertz/xrpl-validator-stats-twitterbot.git"
+    "type": "git",
+    "url": "https://github.com/r0bertz/xrpl-validator-stats-twitterbot.git"
   },
   "dependencies": {
     "twit": "^2.2.11"

@@ -6,7 +6,8 @@ var fs = require('fs'),
 var T = new Twit(config.twitter);
 
 var image_path = '/tmp/validator-stats.jpg';
-var url = 'https://stats.xrplapps.com/validators/report/?vpk=' + config.validator_pubkey;
+// var url = 'https://stats.xrplapps.com/validators/report/?vpk=' + config.validator_pubkey;
+var url = 'https://xrpcharts.ripple.com/#/validators/' + config.validator_pubkey;
 
 function random_from_array(images){
   return images[Math.floor(Math.random() * images.length)];
@@ -46,7 +47,7 @@ function upload_random_image(image_path){
 
 const { exec } = require("child_process");
 
-exec(['wkhtmltoimage', url, image_path].join(' '), (error, stdout, stderr) => {
+exec(['wkhtmltoimage', '--crop-h', '800', url, image_path].join(' '), (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
